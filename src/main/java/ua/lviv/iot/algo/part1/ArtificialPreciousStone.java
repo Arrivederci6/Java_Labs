@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1;
+package main.java.ua.lviv.iot.algo.part1;
 
 import lombok.*;
 

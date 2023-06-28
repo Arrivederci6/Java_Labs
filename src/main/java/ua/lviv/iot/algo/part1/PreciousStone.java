@@ -1,4 +1,4 @@
-package ua.lviv.iot.algo.part1;
+package main.java.ua.lviv.iot.algo.part1;
 
 import lombok.*;
 
@@ -9,7 +9,6 @@ import lombok.*;
 @ToString
 
 public class PreciousStone extends Stone {
-
     private double clarity;
     private static PreciousStone instance = new PreciousStone();
 
@@ -27,11 +26,12 @@ public class PreciousStone extends Stone {
     }
 
     public void increasePrice(double percentage) {
-        pricePerGram += pricePerGram / percentage;
+        pricePerGram += pricePerGram * (percentage / 100);
     }
 
     @Override
     public double getFullPrice() {
         return weightInGrams * pricePerGram * clarity;
     }
+
 }
