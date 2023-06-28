@@ -1,4 +1,4 @@
-package main.java.ua.lviv.iot.algo.part1;
+package main.java.ua.lviv.iot.algo.part1.model;
 
 import lombok.*;
 
@@ -19,4 +19,12 @@ public abstract class Stone {
         return 0;
     }
 
+
+    public String getHeaders(){
+        return "name," + "color," + "weightInGrams," + "pricePerGram";
+    }
+
+    public String toCSV() {
+        return name + "," + color + "," + weightInGrams + "," + pricePerGram;
+    }
 }

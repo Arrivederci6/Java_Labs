@@ -1,6 +1,6 @@
-package test.java;
+package test.java.model;
 
-import main.java.ua.lviv.iot.algo.part1.PreciousStone;
+import main.java.ua.lviv.iot.algo.part1.model.PreciousStone;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
